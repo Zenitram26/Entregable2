@@ -1,0 +1,641 @@
+
+/* Aqui importamos una hoja de estilos externa con fuentes y demas*/
+
+@import url('https://fonts.googleapis.com/css2?family=Agdasima&family=Work+Sans:wght@100;200;300;400;600;800&display=swap');
+
+
+/* aqui aplicamos con el selector universal * estilos a todos los elementos de la página.*/
+*{
+    box-sizing: border-box;
+    font-family: 'Work Sans';
+    margin: 0;
+    padding: 0;
+}
+
+
+html{
+    /* me permite deslizar cuando haga clic en los link del menu */
+    scroll-behavior: smooth;
+}
+
+/* Menu encabezado principal */
+
+.contenedor-header{
+    background: #1e2326;
+    position: fixed; /*para mantener el contenedor de nav visible siempre*/
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+
+/* guia 2*/
+.contenedor-header header{
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+
+/* guia 3*/
+.contenedor-header header .logo a{
+    font-family: 'Agdasima';
+    font-size: 36px;
+    color: #1cb698;
+    text-decoration: none;
+}
+
+/* guia 4 */
+.contenedor-header header ul{
+    display: flex;
+    list-style: none;
+}   
+
+/* guia 5*/
+.contenedor-header header nav ul li a{
+    text-align: none;
+    color: #fff;
+    margin: 0 15px;
+    padding: 3px;
+    transition: .5s;
+    text-decoration: none;
+}
+
+/* Efecto cuando nos posicionamos arriba de cada titulo del encabezado */
+.contenedor-header header nav ul li a:hover{
+    color: #1cb698;
+}
+
+/* SECCIÓN INICIO */
+
+/* guia 6*/
+.inicio{
+    background: linear-gradient(to  top, rgba(30,35,38,.8), rgba(30,35,38,.1)), url(img/Fondo.jpg);
+    background-size: cover;
+    height: 100vh;
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+
+/* guia 7*/
+.inicio .contenido-banner{
+    padding: 20px;
+    background-color: #1e2326;
+    max-width: 350px;
+    margin: auto;
+    text-align: center;
+    border-radius: 40px;
+}
+
+/* guia 8*/
+.inicio .contenido-banner img{
+    margin-top: 40px;
+    border: 10px solid #1cb698; /*color del borde de la foto */
+    display: block;
+    width: 80%;
+    margin: auto;
+    border-radius: 100%;
+}
+
+/* guia 9*/
+.inicio .contenido-banner h1{
+    margin-top: 40px;
+    font-size: 42px;
+    font-family: 'Agdasima';
+}
+
+/* guia 10*/
+.inicio .contenido-banner h2{
+    font-size: 15px;
+    font-weight: normal;
+}
+
+/* guia 11*/
+.inicio .contenido-banner  .redes a{
+    color: #fff;
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid #fff;
+    border-radius: 100%;
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    margin: 40px 5px;
+    font-size: 20px;
+    transition: .3s;
+}
+
+/* Efecto cuando nos posicionamos arriba de cada icono 
+en la seccion de redes en inicio */
+.inicio .contenido-banner  .redes a:hover{
+    background-color: #1cb698;
+}
+
+
+/*Aqui iniciamos los estilos de toda la seccion de la seccion sobre mi */
+
+/* guia 12 contenedor seccion principal*/
+.sobremi{
+    background-color: #1e2326;
+    color: #fff;  /* color de la fuente dentro de nuestro contenedor */ 
+    padding: 50px 20px;
+}
+
+/* guia 13 nuestro segundo contenedor interno*/
+.sobremi .contenido-seccion{
+    max-width: 1100px;
+    margin: auto;
+}
+
+/* guia 14 */
+.sobremi h2{
+    font-size: 48px;
+    font-family: 'Agdasima';
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* guia 15 */
+.sobremi .contenido-seccion p{
+    font: 18px;
+    line-height: 22px;
+    margin-bottom: 20px;
+}
+
+/*Aqui resaltamos nuestro span dentro del parrafo*/
+.sobremi .contenido-seccion p span{
+    color: #1cb698;
+    font-weight: bold;
+}
+
+/* guia 16 */
+.sobremi .fila{
+    display: flex; /* caja flexible (Flexbox) en los 
+    elementos dentro de este contenedor. */
+}
+
+/* guia 17 aqui le estamos asignando el 50% de 
+la caja a cada contenedor de informacion*/
+.sobremi .fila .col{
+    width: 50%;
+}
+
+/* guia 18 */
+.sobremi .fila .col h3{
+    font-size: 28px;
+    font-family: 'Agdasima';
+    margin-bottom: 25px;
+}
+
+/* guia 19 Eliminamos viñetas de la lista los li aqui dentro */
+.sobremi .fila .col ul{
+    list-style: none;
+}
+
+/* guia 20 margen parte superior e inferior de los li*/
+.sobremi .fila .col ul li{
+    margin: 12px 0;
+}
+
+/* guia 21 caracteristicas exclusiva de la etiqueta strong*/
+.sobremi .fila .col ul li strong{
+    display: inline-block;
+    color: #1cb698;
+    width: 130px;
+}
+
+/* guia 22*/
+.sobremi li span{
+    background-color: #1cb698;
+    padding: 3px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+
+/* estilos sobre el contenedor de los intereses*/
+
+/* guia 23*/
+.sobremi .contenedor-intereses{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* guia 24*/
+.sobremi .intereses{
+    width: 100px;
+    height: 100px;
+    background-color: #252a2e;
+    border-radius: 10px;
+    margin: 0 15px 15px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: .3s;
+}
+
+/* Efecto cuando nos posicionamos arriba de cada icono 
+en la seccion de redes en inicio */
+.sobremi .intereses:hover{
+    background-color: #1cb698;
+}
+
+
+
+/* SECCION SKILL */
+
+/* guia 25*/
+.skills{
+    background-color: #252a2e;
+    color: #fff;
+    padding: 50px 20px;
+}
+
+/* guia 26*/
+.skills .contenido-seccion{
+    max-width: 1100px; /* Establece el ancho máximo del elemento */
+    margin: auto; /* Centra el elemento horizontalmente */
+}
+
+/* guia 27*/
+.skills h2{
+    font-size: 48px;
+    font-family: 'Agdasima';
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* guia 28*/
+.skills .fila{
+    display: flex;
+}
+
+/* guia 29*/
+.skills .fila .col{
+    width: 100%;
+    padding: 0 20px;
+}
+
+
+/* guia 30*/
+.skills .skill > span{
+    font-weight: bold;
+    display: block; /*<span> ocupará todo el ancho disponible 
+    y comenzará en una nueva línea.*/
+    margin-bottom: 10px;
+}
+
+
+
+/* guia 31*/
+.skills .skill .barra-skill{
+    height: 10px;
+    width: 100%;
+    background-color: #131517;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+/* guia 32*/
+.skills .skill .progreso{
+    background-color: #1cb698;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 10px;
+}
+
+
+/* guia 33 */
+.skills .skill .barra-skill span{
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    background-color: #1cb698;
+    border-radius: 10px;
+    line-height: 40px;
+    text-align: center;
+    top: -17px;
+    right: -5%;
+    font-size: 14px;
+} 
+
+/* guia 34 */
+.skills .skill .Html{
+    width: 0%;
+    animation: 2s Html forwards;
+
+    /*La animación durará 2 segundos*/
+    /*Nombre de la animación keyframe que se aplicará*/
+    /*Indica que después de la animación, el elemento mantendrá los estilos del último keyframe (100%)*/
+}
+
+/*Indica que después de la animación, 
+el elemento mantendrá los estilos del último keyframe (100%)
+
+Esta es una regla de animación CSS llamada @keyframes que define cómo se anima la propiedad width de un elemento, 
+específicamente para mostrar una barra de progreso de habilidades en HTML.*/
+@keyframes Html{
+    0%{width: 0%;}
+    100%{width: 68%;}
+}
+
+/* guia 35 */
+.skills .skill .Css{
+    width: 0%;
+    animation: 2s Css forwards;
+}
+@keyframes Css{ 
+    0%{width: 0%;}
+    100%{width: 60%;}
+}
+
+/* guia 36 */
+.skills .skill .JavaScript{
+    width: 0%;
+    animation: 2s JavaScript forwards;
+}
+@keyframes JavaScript{
+    0%{width: 0%;}
+    100%{width: 27%;}
+}
+
+/*guia 37*/
+.contacto{
+    background-image: url(img/contact_bg.png);
+    background-color: #22261e;
+    color: #fff; /* Color fuente*/
+    padding: 50px 0;
+}
+
+/*guia 38*/
+.contacto .contenido-seccion{
+    max-width: 1100px;
+    margin: auto;
+}
+
+/*guia 39*/
+.contacto h2{
+    font-size: 48px;
+    font-family: 'Agdasima';
+    text-align: center;
+    padding: 20px 0;
+}
+
+/*guia 40*/
+.contacto .fila{
+    display: flex;
+}
+
+/*guia 41*/
+.contacto .col{
+    width: 100%;
+    padding: 10px;
+    position: relative;
+}
+
+
+/*guia 42*/
+.contacto input, textarea{
+    display: block;
+    width: 100%;
+    padding: 18px;
+    border: none;
+    margin-bottom: 20px;
+    background-color: #252A2E;
+    color: #fff;
+    font-size: 18px;
+}
+
+/*guia 43*/
+.contacto button{
+    cursor: pointer;
+    background-color: transparent;
+    border-radius: 5px;
+    border: 2px solid #fff;
+    width: fit-content;
+    display: block;
+    margin: 20px auto;
+    padding: 10px 22px;
+    font-size: 16px;
+    color: #fff;
+    position: relative;
+    z-index: 10;
+}
+
+.contacto button .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #1cb698;
+    z-index: -1;
+    transition: 1s;
+}
+
+/*Efecto del botton cuando nos ponemos arriba*/
+.contacto button:hover .overlay{
+    width: 100%;
+}
+
+/*guia 44*/
+footer{
+    background-color: #252A2E;
+    color: #fff;
+    padding: 50px 0 30px 0;
+    text-align: center;
+    position: relative;
+    width: 100%;
+}
+
+footer .redes{
+    margin-bottom: 20px;
+}
+
+
+footer .redes a{
+    color: #fff;
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid #fff;
+    border-radius: 100%;
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    margin: 40px 5px;
+    font-size: 20px;
+    transition: .3s;
+}
+
+/* ========== MEDIA QUERIES (RESPONSIVO) ========== */
+
+/* Dispositivos medianos (tablets, 768px y menos) */
+@media screen and (max-width: 768px) {
+    /* Header */
+    .contenedor-header header {
+        flex-direction: column;
+        padding: 15px;
+    }
+    
+    .contenedor-header header .logo {
+        margin-bottom: 15px;
+    }
+    
+    .contenedor-header header ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .contenedor-header header nav ul li a {
+        margin: 0 10px;
+    }
+    
+    /* Sección Inicio */
+    .inicio {
+        height: auto;
+        padding: 100px 20px 50px;
+    }
+    
+    .inicio .contenido-banner {
+        max-width: 90%;
+        padding: 30px 15px;
+    }
+    
+    .inicio .contenido-banner img {
+        width: 70%;
+        margin-top: 20px;
+    }
+    
+    .inicio .contenido-banner h1 {
+        font-size: 32px;
+        margin-top: 20px;
+    }
+    
+    .inicio .contenido-banner .redes a {
+        margin: 20px 5px;
+    }
+    
+    /* Sección Sobre Mi */
+    .sobremi .fila {
+        flex-direction: column;
+    }
+    
+    .sobremi .fila .col {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    
+    .sobremi h2 {
+        font-size: 36px;
+    }
+    
+    .sobremi .fila .col h3 {
+        font-size: 24px;
+    }
+    
+    .sobremi .contenedor-intereses {
+        justify-content: center;
+    }
+    
+    /* Sección Skills */
+    .skills .fila {
+        flex-direction: column;
+    }
+    
+    .skills h2 {
+        font-size: 36px;
+    }
+    
+    .skills .fila .col {
+        padding: 0;
+        margin-bottom: 30px;
+    }
+    
+    /* Sección Contacto */
+    .contacto .fila {
+        flex-direction: column;
+    }
+    
+    .contacto h2 {
+        font-size: 36px;
+    }
+    
+    /* Footer */
+    footer .redes a {
+        margin: 20px 5px;
+    }
+}
+
+/* Dispositivos pequeños (móviles, 480px y menos) */
+@media screen and (max-width: 480px) {
+    /* Header */
+    .contenedor-header header nav ul li a {
+        margin: 0 5px;
+        font-size: 14px;
+    }
+    
+    /* Sección Inicio */
+    .inicio .contenido-banner h1 {
+        font-size: 28px;
+    }
+    
+    .inicio .contenido-banner h2 {
+        font-size: 14px;
+    }
+    
+    /* Sección Sobre Mi */
+    .sobremi h2 {
+        font-size: 32px;
+    }
+    
+    .sobremi .fila .col ul li strong {
+        width: 100px;
+        display: block;
+        margin-bottom: 5px;
+    }
+    
+    .sobremi .intereses {
+        width: 80px;
+        height: 80px;
+        margin: 0 10px 10px 0;
+    }
+    
+    /* Sección Skills */
+    .skills .skill .barra-skill span {
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        font-size: 12px;
+        top: -12px;
+    }
+    
+    /* Sección Contacto */
+    .contacto input, 
+    .contacto textarea {
+        padding: 12px;
+        font-size: 16px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

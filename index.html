@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" 
+        referrerpolicy="no-referrer" /> <!--link externo de iconos-->
+    <title>Portafolio</title>
+    <!-- <link rel="stylesheet" href="estilos.css"> -->
+    <link rel="stylesheet" href="/styles.css">
+</head>
+
+<body>
+    <!-- MENU ENCABEZADO-->
+    <div class="contenedor-header">
+        <header> <!-- guia 2 -->
+            <div class="logo"> <!-- guia 3 -->
+                <a href="#">Jose</a>
+            </div>
+            <nav id="nav"> <!-- guia 5 -->
+                <ul> <!-- guia 4 -->
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">HABILIDADES</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                </ul>
+            </nav>           
+        </header>
+    </div>
+
+
+    
+    <!--SECCION INICIO-->
+    <section id="inicio" class="inicio"> <!-- guia 6 -->
+        <div class="contenido-banner">  <!-- guia 7 -->
+            <div class="contenedor img"> <!-- guia 8 -->
+                <img src="./img/Jose.jpg" alt="foto perfil">
+            </div>
+            <h1>JOSE MARTINEZ</h1> <!-- guia 9 -->
+            <h2>Desarrollador Frond-End </h2> <!-- guia 10 -->
+            <div class="redes"> <!-- guia 11 -->
+                <a href="#"><i class="fa-brands fa-discord"></i></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#"><i class="fa-brands fa-github"></i></a>
+            </div>
+        </div>
+    </section>
+
+
+    <!--SECCION SOBRE MI-->
+    <section id="sobremi" class="sobremi"> <!-- guia 12 -->
+        <div class="contenido-seccion"> <!-- guia 13 -->
+            <h2>Sobre Mi</h2> <!-- guia 14 -->
+
+            <!-- guia 15 -->
+            <p><span>Hola, soy Jose Martinez. </span>Cuando tienes a Dios en todos tus planes ganarás todas las
+                batallas.
+                Me
+                agrada trabajar en equipo, cooperando con todos y ayudando de la mejor manera posible, con gran
+                satisfacción en enseñar y aprender. Soy responsable, activo, dinamico, con capacidad de iniciativa y
+                liderazgo, poseo ademas la facilidad de adaptarme de manera rapida y eficiente a los entornos y tareas
+                laborales que me asignen o propongan.</p>
+
+            <div class="fila"> <!-- guia 16 -->
+                <!--Datos personales-->
+                <div class="col"> <!-- guia 17  contenedor de datos personales -->
+                    <h3>Datos Personales</h3> <!-- guia 18 -->
+                    <ul><!-- guia 19 -->
+                        <li> <!-- guia 20 -->
+                            <strong>Cumpleaños</strong> <!-- guia 21 -->
+                            26-12-1989
+                        </li>
+                        <li>
+                            <strong>Telefono</strong>
+                            +57 - 3012807853
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            Ing.Zenitram04@gmai.com
+                        </li>
+                        <li>
+                            <strong>Website</strong>
+                            Wwww.example.com
+                        </li>
+                        <li>
+                            <strong>Dirección</strong>
+                            Calle 29 #4i-126 Valledupar, Colombia
+                        </li>
+                        <li>
+                            <strong>Cargo</strong>
+                            <span>Desarrollador Frond-End</span> <!-- guia 22 --> 
+                        </li>
+                    </ul>
+                </div>
+
+                <!--Intereses-->
+                <div class="col"> <!-- guia 17 contenedor de intereses -->
+                    <h3>Intereses</h3> <!-- guia 18 -->
+                    <div class="contenedor-intereses"> <!-- guia 23 -->
+                        <div class="intereses"> <!-- guia 24 -->
+                            <span class="fa-solid fa-gamepad"></span>
+                            <span>JUEGOS</span>
+                        </div>
+                        <div class="intereses">
+                            <span class="fa-solid fa-headphones-simple"></span>
+                            <span>MUSICA</span>
+                        </div>                    
+                        <div class="intereses">
+                            <span class="fa-solid fa-book"></span>
+                            <span>LIBROS</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+    <!--SECCION SKILLS-->
+    <section class="skills" id="skills"> <!-- guia 25 -->
+        <div class="contenido-seccion"> <!-- guia 26 -->
+            <h2>Habilidades Tecnicas</h2> <!-- guia 27 -->
+            <div class="fila"> <!-- guia 28 -->
+
+
+                <!--Seccion de conocimiento de lenguajes por porcentaje-->
+                <div class="col"> <!-- guia 29 -->
+                    <div class="skill">
+                        <span>Html</span> <!-- guia 30 -->
+                        <div class="barra-skill"> <!-- guia 31 -->
+                            <div class="progreso"> <!-- guia 32 -->
+                                <span>68%</span><!-- guia 33 -->
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="skill">
+                        <span>Css</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>60%</span>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="skill">
+                        <span>JavaScript</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>27%</span>
+                            </div>
+                        </div>
+                    </div>                  
+                </div>             
+            </div>
+        </div>
+    </section>
+
+        <!--SECCION CONTACTO-->
+
+        <section id="contacto" class="contacto"> <!-- guia 37 -->
+            <div class="contenido-seccion"> <!--guia 38-->
+                <h2>CONTACTO</h2> <!--guia 39-->
+                <div class="fila"> <!--guia 40-->
+                    <!--FORMULARIO-->
+                    <div class="col"> <!--guia 41-->
+                        <!--guia 42-->
+                        <input type="text" placeholder="Tu Nombre">
+                        <input type="text" placeholder="Numero telefónico">
+                        <input type="text" placeholder="Dirección de correo">
+                        <input type="text" placeholder="Tema">
+                        <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                       <button> <!--  guia 43 -->
+                            Enviar Mensaje<i class="fa-solid fa-paper-plane"></i>
+                            <span class="overlay"></span>
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+         <!--SECCION FOOTER-->
+         <footer> <!--guia 44-->
+            <div class="redes">
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-skype"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+        </footer>        
+        <script src="script.js"></script>
+</body>
+
+</html>
